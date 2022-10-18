@@ -1,48 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-     <head>
-          <meta charset="UTF-8" />
-          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-          <title>Document</title>
-          <link rel="stylesheet" href="./styles.css" />
-     </head>
-     <body>
-          <script defer src="./app.js"></script>
-          <header id="header">
-               <h1>Conversor de Moedas</h1>
-          </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conversor de Moedas LETS GO</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <script defer src="./app.js"></script>
+    <header id="header">
+      <h1>Conversor de Moedas</h1>
+    </header>
 
-          <main class="main-box">
-               <div class="field">
-                    <label for="">Valor</label>
-                    <input type="number" name="" id="value" min="0" />
-               </div>
+    <main class="main-box">
+      <div class="field">
+        <label for="">Valor</label>
+        <input type="number" name="" id="value" min="0" />
+      </div>
 
-               <div class="field">
-                    <label for="">Converter De</label>
-                    <select name="" id="from">
-                         <option value="USD">Dolar</option>
-                         <option value="BRL">Real</option>
-                         <option value="EUR">Euro</option>
-                    </select>
-               </div>
+      <div class="field">
+        <label for="">Converter De</label>
+        <select name="" id="from">
+          <option value="USD">Dolar</option>
+          <option value="BRL">Real</option>
+          <option value="EUR">Euro</option>
+        </select>
+      </div>
 
-               <div class="field">
-                    <label for="">Para: </label>
-                    <select name="" id="target">
-                         <option value="USD">Dolar</option>
-                         <option value="BRL">Real</option>
-                         <option value="EUR">Euro</option>
-                    </select>
-               </div>
+      <div class="field">
+        <label for="">Para: </label>
+        <select name="" id="target">
+          <option value="USD">Dolar</option>
+          <option value="BRL">Real</option>
+          <option value="EUR">Euro</option>
+        </select>
+      </div>
 
-               <div class="filed">
-                    <button onclick="onClick()">Converter</button>
-               </div>
-               <div id="info"></div>
-               <div id="info2">
-                    <!-- <div class="infCoin">
+      <div class="filed">
+        <button onclick="onClick()">Converter</button>
+      </div>
+      <div id="info"></div>
+      <div id="info2">
+        <!-- <div class="infCoin">
                          <span>Conversão de: a </span>
                          <span>Valor a converter: b</span>
                     </div>
@@ -50,41 +50,41 @@
                          <span>Conversão de: a </span>
                          <span>Valor a converter: b</span>
                     </div> -->
-               </div>
-          </main>
-          <div class="title-box">
-               <h1>Fechamentos dos últimos dias</h1>
-          </div>
-          <main class="main-box">
-               <div class="field">
-                    <label for="">Converter de:</label>
-                    <select name="" id="fromDaily">
-                         <option value="USD">Dolar</option>
-                         <option value="BRL">Real</option>
-                         <option value="EUR">Euro</option>
-                    </select>
-               </div>
+      </div>
+    </main>
+    <div class="title-box">
+      <h1>Fechamentos dos últimos dias</h1>
+    </div>
+    <main class="main-box">
+      <div class="field">
+        <label for="">Converter de:</label>
+        <select name="" id="fromDaily">
+          <option value="USD">Dolar</option>
+          <option value="BRL">Real</option>
+          <option value="EUR">Euro</option>
+        </select>
+      </div>
 
-               <div class="field">
-                    <label for="">Para: </label>
-                    <select name="" id="targetDaily">
-                         <option value="USD">Dolar</option>
-                         <option value="BRL">Real</option>
-                         <option value="EUR">Euro</option>
-                    </select>
-               </div>
+      <div class="field">
+        <label for="">Para: </label>
+        <select name="" id="targetDaily">
+          <option value="USD">Dolar</option>
+          <option value="BRL">Real</option>
+          <option value="EUR">Euro</option>
+        </select>
+      </div>
 
-               <div class="field">
-                    <label for="">Dias:</label>
-                    <input type="number" name="" id="days" min="0" />
-               </div>
+      <div class="field">
+        <label for="">Dias:</label>
+        <input type="number" name="" id="days" min="0" />
+      </div>
 
-               <div class="filed">
-                    <button onclick="onClickDaily()">Converter</button>
-               </div>
-               <div id="infoDaily"></div>
-               <div id="info2Daily" class="infReturn">
-                    <!-- <div class="infCoin">
+      <div class="filed">
+        <button onclick="onClickDaily()">Converter</button>
+      </div>
+      <div id="infoDaily"></div>
+      <div id="info2Daily" class="infReturn">
+        <!-- <div class="infCoin">
                          <span>Conversão de: a </span>
                          <span>Valor a converter: b</span>
                     </div>
@@ -92,47 +92,47 @@
                          <span>Conversão de: a </span>
                          <span>Valor a converter: b</span>
                     </div> -->
-               </div>
-          </main>
+      </div>
+    </main>
 
-          <div class="title-box">
-               <h1>Fechamentos dos últimos dias</h1>
-          </div>
-          <main class="main-box">
-               <div class="field">
-                    <label for="">Converter de:</label>
-                    <select name="" id="fromDaily2">
-                         <option value="USD">Dolar</option>
-                         <option value="BRL">Real</option>
-                         <option value="EUR">Euro</option>
-                    </select>
-               </div>
+    <div class="title-box">
+      <h1>Fechamentos dos últimos dias</h1>
+    </div>
+    <main class="main-box">
+      <div class="field">
+        <label for="">Converter de:</label>
+        <select name="" id="fromDaily2">
+          <option value="USD">Dolar</option>
+          <option value="BRL">Real</option>
+          <option value="EUR">Euro</option>
+        </select>
+      </div>
 
-               <div class="field">
-                    <label for="">Para: </label>
-                    <select name="" id="targetDaily2">
-                         <option value="USD">Dolar</option>
-                         <option value="BRL">Real</option>
-                         <option value="EUR">Euro</option>
-                    </select>
-               </div>
+      <div class="field">
+        <label for="">Para: </label>
+        <select name="" id="targetDaily2">
+          <option value="USD">Dolar</option>
+          <option value="BRL">Real</option>
+          <option value="EUR">Euro</option>
+        </select>
+      </div>
 
-               <div class="field">
-                    <label for="">Dias inicio:</label>
-                    <input type="date" name="" id="inicialDays" />
-               </div>
+      <div class="field">
+        <label for="">Dias inicio:</label>
+        <input type="date" name="" id="inicialDays" />
+      </div>
 
-               <div class="field">
-                    <label for="">Dias final:</label>
-                    <input type="date" name="" id="finalDays" />
-               </div>
+      <div class="field">
+        <label for="">Dias final:</label>
+        <input type="date" name="" id="finalDays" />
+      </div>
 
-               <div class="filed">
-                    <button onclick="onClickEspecificTime()">Converter</button>
-               </div>
-               <div id="info3Daily"></div>
-               <div id="info3Daily">
-                    <!-- <div class="infCoin">
+      <div class="filed">
+        <button onclick="onClickEspecificTime()">Converter</button>
+      </div>
+      <div id="info3Daily"></div>
+      <div id="info3Daily">
+        <!-- <div class="infCoin">
                          <span>Conversão de: a </span>
                          <span>Valor a converter: b</span>
                     </div>
@@ -140,7 +140,7 @@
                          <span>Conversão de: a </span>
                          <span>Valor a converter: b</span>
                     </div> -->
-               </div>
-          </main>
-     </body>
+      </div>
+    </main>
+  </body>
 </html>
