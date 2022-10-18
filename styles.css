@@ -1,85 +1,141 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
 }
 
 body {
-    padding: 32px;
-    display: flex;
-    flex-direction: column;
-    
+     padding: 32px;
+     display: flex;
+     flex-direction: column;
 
-    background-color: #191d32;
+     background-color: #191d32;
 }
 
-
-h1, h2, h3, h4, h5, h6, span, button, p {
-    color: #f2f5f9;
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+button,
+p {
+     color: #f2f5f9;
 }
 
 #header {
-    width: 100%;
-    display: flex;
+     width: 100%;
+     display: flex;
 }
 
-
-
 .field {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
+     display: flex;
+     flex-direction: column;
+     gap: 4px;
 }
 
 label {
-    color: #f2f5f9;
-    font-size: 16px;
+     color: #f2f5f9;
+     font-size: 16px;
 }
 
-#main-box {
-    margin-top: 12px;
+.main-box {
+     margin-top: 12px;
 
-    background-color: #282f44;
+     background-color: #282f44;
 
-    display: flex;
-    align-items: flex-end;
+     display: flex;
+     align-items: flex-end;
+     flex-wrap: wrap;
 
-    gap: 32px;
-    
-    padding: 48px 16px;
+     gap: 32px;
 
+     padding: 48px 16px;
+}
+
+.title-box {
+     display: flex;
+     width: 100%;
+     margin-top: 15px;
 }
 
 button {
- background-color: #6d3b47;
- border: 0;
- outline: 0;
- cursor: pointer;
+     background-color: #6d3b47;
+     border: 0;
+     outline: 0;
+     cursor: pointer;
 
- border-radius: 5px;
- width: 100px;
+     border-radius: 5px;
+     width: 100px;
 
-    height: 32px;
+     height: 32px;
 
- font-weight: bold;
+     font-weight: bold;
 
- transition: all 0.3s;
-
+     transition: all 0.3s;
 }
 
 button:hover {
-    filter: brightness(0.8);
+     filter: brightness(0.8);
 }
 
-input, select {
-    background-color: #f2f5f9;
-    outline: 0;
-    border: 0;
+input,
+select {
+     background-color: #f2f5f9;
+     outline: 0;
+     border: 0;
 
-    width: 200px;
-    height: 32px;
+     width: 200px;
+     height: 32px;
 
-    padding: 0 4px;
-    border-radius: 5px;
+     padding: 0 4px;
+     border-radius: 5px;
+}
+
+#info2 {
+     width: 100%;
+     display: flex;
+     flex-wrap: wrap;
+}
+
+.infCoin {
+     display: flex;
+     align-items: flex-end;
+     flex-wrap: wrap;
+
+     margin: 10px 35px 10px 0;
+
+     gap: 32px;
+}
+
+.infReturn {
+     width: 100%;
+}
+
+.infCoinMoeda {
+     display: flex;
+     align-items: flex-end;
+     flex-wrap: wrap;
+
+     width: 300px;
+
+     margin: 10px 35px 10px 0;
+
+     border: #fff 1px solid;
+}
+.infCoinMoeda .infCoin {
+     gap: 5px;
+}
+
+.divMoedas {
+     display: flex;
+     flex-wrap: wrap;
+}
+
+@media (max-width: 767px) {
+     .infCoin {
+          margin: 15px 0;
+          gap: 10px;
+     }
 }
